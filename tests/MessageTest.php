@@ -4,7 +4,6 @@ class MessageTest extends PHPUnit_Framework_TestCase
 {
     public function testIt()
     {
-
         $camp_id = '1234';
         $to_addr = 'someemail@test.com';
         $trans_id = '123123asdf';
@@ -38,10 +37,6 @@ class MessageTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($camp_id, $obj->CAMPAIGN_ID);
         $this->assertEquals($trans_id, $obj->TRANSACTION_ID);
         $this->assertEquals($to_addr, $obj->RECIPIENT->EMAIL);
-
-
-        echo '<pre>';
-        print_r($obj);
 
     }
 }
