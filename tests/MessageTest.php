@@ -4,14 +4,23 @@ class MessageTest extends PHPUnit_Framework_TestCase
 {
     public function testIt()
     {
-        $camp_id = '1234';
-        $to_addr = 'someemail@test.com';
-        $trans_id = '123123asdf';
+        $camp_id = '45262855';
+        $to_addr = 'ashwinnn@gmail.com';
+        $trans_id = '03172014131';
 
         $pers = array(
-            'FirstName' => 'Some',
-            'LastName' => 'Guy',
-            'Address' => 'New York'
+            'FirstName' => 'Ashwin',
+            'LastName' => 'Surajbali',
+            'CustomerOrderDate' => '04/07/2014',
+            'MenuPlanName' => 'Chef Select Menu',
+            'ShipmentAddressStreet' => '1313 Mockingbird Lane',
+            'ShipmentAddressCity' => 'New York',
+            'ShipmentAddressState' => 'NY',
+            'ShipmentAddressPostalCode' => '12344',
+            'ExpectedDeliveryDate' => '04/16/14',
+            'UPSTrackingNumber' => 'UPSTRACKINGNM',
+            'ReorderDate' => '04/20/1234',
+            'CustomerOrderId' => '1233'
         );
 
         $client = new \Silverpop\Client(2, true);
